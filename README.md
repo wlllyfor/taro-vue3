@@ -56,7 +56,9 @@ vue3 刚发布时，由于没有合适的 ui 框架支持，我学习 vue3 的�
 - Prettier
 - Volar
 
-与`vetur`相同，`volar`是一个针对`vue`的`vscode`插件，不过与`vetur`不同的是，`volar`提供了更为强大的功能。[Volar 介绍](https://juejin.cn/post/6966106927990308872)
+与`vetur`相同，`volar`是一个针对 vue 的 vscode 插件，不过与 vetur 不同的是，volar 提供了更为强大的功能。
+
+[Volar 介绍](https://juejin.cn/post/6966106927990308872)
 
 ## 搭建项目架构
 
@@ -164,7 +166,6 @@ module.exports = {
 添加 [husky](https://github.com/typicode/husky) 触发 Git 钩子，代码提交前检查
 
 ```
-# 初始化 husky
 npx husky install
 ```
 
@@ -217,7 +218,7 @@ const app = createApp();
 app.use(Button);
 ```
 
-index.vue 中直接在 templat 中写，不用再引入
+index.vue 中，nut-button 组件直接在 template 中写，不用再引入
 
 ```
 <template>
@@ -421,6 +422,8 @@ const userInfo = computed(() => auth.userInfo)
 
 </script>
 ```
+
+总的来说， pinia 写起来是非常简洁的，这种类 react hooks 的写法，我是非常喜欢的
 
 ### 请求方法封装
 
